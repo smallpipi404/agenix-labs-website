@@ -1,8 +1,17 @@
+import Hero from '@/components/sections/Hero'
+import WhatWeDo from '@/components/sections/WhatWeDo'
+import HowItWorks from '@/components/sections/HowItWorks'
+import WhyUs from '@/components/sections/WhyUs'
+import Contact from '@/components/sections/Contact'
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <h1 className="text-4xl font-bold text-center pt-20">Agenix Labs LTD</h1>
-      <p className="text-center mt-4 text-gray-400">Coming soon...</p>
+    <main>
+      <Hero />
+      <WhatWeDo />
+      <HowItWorks />
+      <WhyUs />
+      <Contact />
     </main>
   )
 }
