@@ -77,32 +77,6 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* Additional trust indicators */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 pt-12 border-t border-gray-900"
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">500+</div>
-              <div className="text-sm text-gray-400">Active Clients</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">50+</div>
-              <div className="text-sm text-gray-400">Software Partners</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">25+</div>
-              <div className="text-sm text-gray-400">Countries Served</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">10K+</div>
-              <div className="text-sm text-gray-400">Licenses Managed</div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )
