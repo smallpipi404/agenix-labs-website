@@ -1,7 +1,7 @@
 {
   "components": {
     "frontend": {
-      "start": "export PATH=/usr/local/bin:$PATH && next dev -p 3003",
+      "start": "export PATH=/usr/local/bin:$PATH && npx next dev -p 3003",
       "stop": "lsof -ti:3003 | xargs kill -9 2>/dev/null || true",
       "port": 3003,
       "health": "http://localhost:3003",
@@ -9,10 +9,10 @@
     }
   },
   "commands": {
-    "build": "export PATH=/usr/local/bin:$PATH && next build",
+    "build": "export PATH=/usr/local/bin:$PATH && npx next build",
     "install": "export PATH=/usr/local/bin:$PATH && npm install",
     "clean": "rm -rf .next node_modules",
     "lint": "next lint",
-    "start": "next start -p 3003"
+    "start": "export PATH=/usr/local/bin:$PATH && npx next start -p 3003"
   }
 }
