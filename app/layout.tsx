@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import Header from '@/components/Header'
 
 export const metadata: Metadata = {
   title: 'Agenix Labs LTD - Software Subscription Distribution',
@@ -30,7 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Header />
+        <div className="pt-16">{children}</div>
+      </body>
     </html>
   )
 }
