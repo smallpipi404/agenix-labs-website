@@ -1,0 +1,34 @@
+# SuperAI Auto-generated .gitignore
+# Generated at workspace creation to prevent committing sensitive files
+
+# Environment variables and secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE and OS files
+.DS_Store
+.vscode/settings.json
+.idea/
+
+# Session metadata (managed by SuperAI)
+.superai/
+			
