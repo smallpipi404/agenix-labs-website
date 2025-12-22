@@ -51,8 +51,7 @@ export default function WhatWeDo() {
             What We Do
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            We're your trusted partner for software subscription distribution,
-            making complex licensing simple and efficient.
+            We connect customers with leading third-party software providers through trusted subscription distribution partnerships.
           </p>
         </motion.div>
 

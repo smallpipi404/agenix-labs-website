@@ -35,9 +35,9 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
           >
-            Software Subscriptions,
+            Premium Software
             <br />
-            <span className="text-gray-400">Simplified.</span>
+            <span className="text-gray-400">Distribution</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -47,22 +47,18 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            We handle the complexity of software licensing and distribution,
-            so you can focus on what matters most—your business.
+            We connect enterprises and individuals with world-class software providers through strategic partnerships.
           </motion.p>
 
-          {/* CTA buttons */}
+          {/* CTA button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex justify-center"
           >
             <Button href="#contact" size="lg" variant="primary">
-              Get Started
-            </Button>
-            <Button href="#what-we-do" size="lg" variant="outline">
-              Learn More
+              Contact Us
             </Button>
           </motion.div>
 
