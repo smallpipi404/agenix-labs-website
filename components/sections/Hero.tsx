@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
           >
             Premium Software
             <br />
@@ -49,18 +49,6 @@ export default function Hero() {
           >
             We connect enterprises and individuals with world-class software providers through strategic partnerships.
           </motion.p>
-
-          {/* CTA button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex justify-center"
-          >
-            <Button href="#contact" size="lg" variant="primary">
-              Contact Us
-            </Button>
-          </motion.div>
 
           {/* Trust indicators */}
           <motion.div
