@@ -62,13 +62,23 @@ export default function WhatWeDo() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group relative p-8 rounded-2xl bg-gradient-to-b from-gray-900/50 to-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group relative p-8 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:bg-white/10 hover:border-blue-400/30 hover:shadow-[0_8px_32px_0_rgba(96,165,250,0.2)] transition-all duration-300"
             >
-              <div className="mb-6 text-gray-400 group-hover:text-white transition-colors duration-300">
-                {service.icon}
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-blue-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-blue-500/5 transition-all duration-500 pointer-events-none" />
+              
+              <div className="relative z-10">
+                <div className="mb-6 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-semibold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
         </div>
