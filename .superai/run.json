@@ -1,0 +1,18 @@
+{
+  "components": {
+    "frontend": {
+      "start": "next dev -p 3003",
+      "stop": "lsof -ti:3003 | xargs kill -9 2>/dev/null || true",
+      "port": 3003,
+      "health": "http://localhost:3003",
+      "cwd": "."
+    }
+  },
+  "commands": {
+    "build": "next build",
+    "install": "npm install",
+    "clean": "rm -rf .next node_modules",
+    "lint": "next lint",
+    "start": "next start -p 3003"
+  }
+}
