@@ -146,8 +146,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-400 mb-1">Email</div>
-                  <a href="mailto:contact@agenixlabs.com" className="text-white hover:text-gray-300 transition-colors">
-                    contact@agenixlabs.com
+                  <a href="mailto:contact@agenixlabs.co.uk" className="text-white hover:text-gray-300 transition-colors">
+                    contact@agenixlabs.co.uk
                   </a>
                 </div>
               </div>
