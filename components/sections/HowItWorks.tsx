@@ -8,17 +8,17 @@ const steps = [
   {
     number: '01',
     title: 'Tell Us Your Needs',
-    description: 'Share your software requirements and business goals. We'll analyze your needs and recommend the perfect solutions.',
+    description: 'You share your requirements and context. We use this information to support alignment with suitable third-party software providers.',
   },
   {
     number: '02',
-    title: 'We Handle Everything',
-    description: 'From procurement to licensing, we manage all the complexity. Sit back while we set up your subscriptions seamlessly.',
+    title: 'Commercial Coordination',
+    description: 'We coordinate the commercial process between customers and software providers, supporting clear communication and efficient subscription distribution.',
   },
   {
     number: '03',
-    title: 'You Get Results',
-    description: 'Access your software instantly with full support. Focus on your business while we ensure everything runs smoothly.',
+    title: 'Subscription Access',
+    description: 'Once commercial terms are aligned, customers gain access to third-party software subscriptions provided directly by the software provider.',
   },
 ]
 
@@ -39,7 +39,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Three simple steps to transform your software subscription management
+            Three simple steps to support efficient software subscription distribution
           </p>
         </motion.div>
 
@@ -88,15 +88,7 @@ export default function HowItWorks() {
             href="#contact"
             className="inline-flex items-center text-lg text-gray-400 hover:text-white transition-colors group"
           >
-            Ready to get started?
-            <svg
-              className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Start a conversation →
           </a>
         </motion.div>
       </div>
