@@ -41,7 +41,7 @@ export default function Contact() {
             Let's Talk
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Ready to simplify your software subscriptions? Get in touch with our team today.
+            Ready to explore software subscription distribution opportunities? Customers and software providers interested in partnership opportunities are welcome to get in touch.
           </p>
         </motion.div>
 

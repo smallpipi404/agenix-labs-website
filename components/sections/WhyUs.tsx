@@ -6,28 +6,20 @@ import { useRef } from 'react'
 
 const benefits = [
   {
-    title: 'Trusted by Businesses',
-    description: 'Years of experience in software distribution with a proven track record of reliability and security.',
-    stat: '99.9%',
-    statLabel: 'Uptime',
+    title: 'Commercial Reliability',
+    description: 'We operate with clear processes and consistent commercial coordination, supporting reliable subscription distribution across partners.',
   },
   {
-    title: 'Lightning Fast',
-    description: 'Get your software subscriptions up and running in record time with our streamlined processes.',
-    stat: '< 24h',
-    statLabel: 'Setup Time',
+    title: 'Efficient Coordination',
+    description: 'We streamline the commercial process between customers and software providers to support timely subscription activation.',
   },
   {
-    title: 'Expert Support',
-    description: 'Dedicated support team available around the clock to ensure your success.',
-    stat: '24/7',
-    statLabel: 'Support',
+    title: 'Dedicated Point of Contact',
+    description: 'We provide a consistent commercial point of contact to support communication between customers and software providers.',
   },
   {
-    title: 'Cost Effective',
-    description: 'Optimize your software spending with our bulk licensing and smart subscription management.',
-    stat: '30%',
-    statLabel: 'Avg. Savings',
+    title: 'Operational Efficiency',
+    description: 'We focus on efficient commercial coordination, reducing friction between customers and software providers throughout the subscription distribution process.',
   },
 ]
 
@@ -48,8 +40,7 @@ export default function WhyUs() {
             Why Choose Us
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            We combine expertise, efficiency, and reliability to deliver
-            exceptional software distribution services
+            Built on trusted partnerships and efficient software subscription distribution.
           </p>
         </motion.div>
 
@@ -62,12 +53,6 @@ export default function WhyUs() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300"
             >
-              {/* Stat badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 border border-gray-800 mb-6">
-                <span className="text-2xl font-bold mr-2">{benefit.stat}</span>
-                <span className="text-sm text-gray-400">{benefit.statLabel}</span>
-              </div>
-
               <h3 className="text-2xl font-semibold mb-4">{benefit.title}</h3>
               <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
 
