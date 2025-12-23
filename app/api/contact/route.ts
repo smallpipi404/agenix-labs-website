@@ -115,7 +115,7 @@ Submitted at: ${new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }
       subject: emailSubject,
       html: emailHtml,
       text: emailText,
-      reply_to: email, // Allow direct reply to the sender
+      replyTo: email, // Allow direct reply to the sender
     });
 
     console.log('[INFO] Email sent successfully:', data);
