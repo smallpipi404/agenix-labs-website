@@ -82,7 +82,7 @@ export default function Contact() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Let's Talk
+            Let&apos;s Talk
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Ready to explore software subscription distribution opportunities? Customers and software providers interested in partnership opportunities are welcome to get in touch.
@@ -217,7 +217,7 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Whether you're looking to streamline your existing software subscriptions
+                Whether you&apos;re looking to streamline your existing software subscriptions
                 or explore new solutions, our team is here to help.
               </p>
             </div>
