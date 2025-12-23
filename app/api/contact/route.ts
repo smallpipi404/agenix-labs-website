@@ -125,7 +125,7 @@ Submitted at: ${new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }
       {
         success: true,
         message: 'Your message has been sent successfully. We will get back to you soon!',
-        emailId: data.id,
+        emailId: data.data?.id,
       },
       { status: 200 }
     );
