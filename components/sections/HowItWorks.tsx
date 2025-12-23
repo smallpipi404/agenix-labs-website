@@ -62,12 +62,15 @@ export default function HowItWorks() {
                     initial={{ scale: 0 }}
                     animate={isInView ? { scale: 1 } : { scale: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
-                    className="w-20 h-20 rounded-full bg-white text-black flex items-center justify-center text-2xl font-bold mb-6 relative z-10"
+                    whileHover={{ scale: 1.15, rotate: 10 }}
+                    className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mb-6 relative z-10 shadow-[0_0_40px_rgba(96,165,250,0.6),0_0_80px_rgba(139,92,246,0.3)] backdrop-blur-sm border border-blue-400/30"
                   >
                     {step.number}
                   </motion.div>
 
-                  <h3 className="text-2xl font-semibold mb-4">{step.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    {step.title}
+                  </h3>
                   <p className="text-gray-400 leading-relaxed max-w-sm">
                     {step.description}
                   </p>
