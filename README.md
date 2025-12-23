@@ -72,9 +72,33 @@ npm run dev
 
 ### Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Import project in [Vercel](https://vercel.com)
-3. Deploy with zero configuration
+This project is optimized for deployment on Vercel with zero configuration.
+
+**Quick Deploy:**
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Import project in [Vercel Dashboard](https://vercel.com/dashboard)
+3. Configure environment variables (see below)
+4. Deploy automatically
+
+**Environment Variables Required:**
+
+- `RESEND_API_KEY` - Your Resend API key for contact form emails
+
+**📖 Detailed Deployment Guide:**
+
+See [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) for:
+- Step-by-step deployment instructions (Web UI & CLI)
+- Environment variable configuration
+- Custom domain setup
+- Troubleshooting tips
+- Performance optimization
+
+**Configuration Files:**
+
+- `vercel.json` - Vercel deployment configuration
+- `.env.example` - Environment variable template
+- `.vercelignore` - Files to ignore during deployment
 
 ### Other Platforms
 
